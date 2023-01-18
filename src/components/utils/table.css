@@ -1,0 +1,44 @@
+/* Table */
+.table-data {
+  width: 100%;
+  text-align: center;
+}
+
+.table-data > tbody tr:nth-child(odd) {
+  background-color: var(--detail-secondary-color);
+}
+
+.table-data tbody tr td:first-child {
+  height: 3rem;
+  width: 65%;
+  word-break: break-all;
+}
+
+.table-data th {
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+}
+
+.table-data,
+.table-data th,
+.table-data td {
+  border-collapse: collapse;
+}
+
+.action-column button {
+  margin: 0 10px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .table-data tbody tr {
+    height: 3.5rem;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .table-data tbody tr {
+    height: 3.5rem;
+  }
+}
